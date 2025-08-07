@@ -1,14 +1,20 @@
 @use "/src/sass/base/variables.scss" as *;
 
 @mixin btn {
-        width: 313px;
-        height: 72px;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
-        background: linear-gradient(0deg, #2798b9 0%, #3ab6da 100%);
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 114%;
-        text-transform: uppercase;
-        text-align: center;
-        color: #fff;
+	width: 313px;
+	height: 72px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+	background: linear-gradient(0deg, #2798b9 0%, #3ab6da 100%);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 114%;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+@mixin divider {
+	width: 220px;
+	height: 4px;
+	background-color: $yellow;
 }

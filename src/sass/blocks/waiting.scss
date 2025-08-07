@@ -1,0 +1,73 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.waiting {
+    margin: 88px 0 75px 0;
+    .divider {
+        @include divider;
+        margin: 20px auto;
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 87%;
+        text-align: center;
+        color: #4a4a4a;
+    }
+    &__wrapper {
+        margin-top: 45px;
+        display: grid;
+        grid-template-columns: repeat(3, 340px);
+        gap: 48px;
+        justify-content: center;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__text {
+        margin-top: 26px;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 140%;
+        text-align: center;
+        color: #4a4a4a;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .waiting {
+        &__wrapper {
+            grid-template-columns: repeat(3, 280px);
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .waiting {
+        &__wrapper {
+            grid-template-columns: repeat(3, 230px);
+            gap: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .waiting {
+        margin: 40px 0 30px 0;
+        &__wrapper {
+            grid-template-columns: repeat(2, 240px);
+            grid-auto-rows: auto;
+        }
+        &__descr {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .waiting {
+        &__wrapper {
+            grid-template-columns: 240px;
+        }
+    }
+}
