@@ -1,0 +1,21 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.title {
+    &__promo {
+        font-weight: 900;
+        font-size: 41px;
+        line-height: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        color: $yellow;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .title {
+        &__promo {
+            font-size: 20px;
+        }
+    }
+}

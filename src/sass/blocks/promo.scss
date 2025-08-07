@@ -1,0 +1,75 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.promo {
+    min-height: 800px;
+    background: url('/src/img/main_bg.png') center center / cover no-repeat;
+    padding: 38px 0 60px 0;
+    &__logo {
+        margin: 0 auto;
+        width: 83px;
+        height: 71px;
+    }
+    &__wordpress {
+        margin-bottom: 50px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 160%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+    }
+    &__easy {
+        margin: 20px 0;
+        font-weight: 900;
+        font-size: 80px;
+        line-height: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+    }
+    &__descr {
+        margin-top: 22px;
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 133%;
+        text-align: center;
+        color: #fff;
+        span {
+            font-weight: 700;
+            color: $yellow;
+        }
+    }
+    &__more {
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 160%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+    }
+    .arrow__down {
+        margin: 5px auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .promo {
+        padding-bottom: 30px;
+        &__wordpress {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .promo {
+        min-height: 400px;
+        &__easy {
+            font-size: 25px;
+        }
+        &__descr {
+            font-size: 13px;
+        }
+    }
+}

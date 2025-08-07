@@ -1,0 +1,29 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.btn {
+    &__promo {
+        @include btn;
+        display: block;
+        margin: 72px auto 70px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn {
+        &__promo {
+            margin: 40px auto 30px auto;
+        }
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .btn {
+        &__promo {
+            width: 250px;
+            height: 60px;
+            font-size: 15px;
+        }
+    }
+}
