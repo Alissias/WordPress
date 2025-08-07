@@ -33,6 +33,14 @@
         text-align: center;
         color: #efefef;
     }
+    &__date {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #252525;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -55,6 +63,9 @@
             font-size: 25px;
         }
         &__learning {
+            font-size: 25px;
+        }
+        &__date {
             font-size: 25px;
         }
     }
