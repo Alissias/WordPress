@@ -1,0 +1,63 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.learning {
+    padding: 78px 0 68px 0;
+    margin-top: 98px;
+    background: url("/src/img/second_bg.png") center center / cover no-repeat;
+    .divider {
+        @include divider;
+        margin: 18px auto 39px auto;
+    }
+    &__wrapper {  
+        display: flex;
+        justify-content: space-between; /* или space-around/space-evenly */
+        gap: 20px;   
+    }
+    &__item {
+        flex: 1;
+        text-align: center;
+    }
+    &__round {
+        margin: 0 auto;
+        width: 116px;
+        height: 116px;
+        border-radius: 100%;
+        background-color: #B4E2FF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__descr {
+        margin-top: 26px;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 118%;
+        text-align: center;
+        color: #efefef;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .learning {
+        &__wrapper {
+            flex-wrap: wrap;
+            gap: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .learning {
+        margin-top: 35px;
+        padding-top: 46px;
+        .divider {
+            margin: 39px auto 39px auto;
+        }
+        &__wrapper {
+            margin: 0 50px;
+            gap: 50px;
+        }
+    }
+}
+

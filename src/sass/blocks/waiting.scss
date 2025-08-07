@@ -2,7 +2,7 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .waiting {
-    margin: 88px 0 0 0;
+    padding: 88px 0 0 0;
     .divider {
         @include divider;
         margin: 20px auto;
@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 768px) {
     .waiting {
-        margin: 40px 0 30px 0;
+        padding: 40px 0 30px 0;
         &__wrapper {
             grid-template-columns: repeat(2, 240px);
             grid-auto-rows: auto;

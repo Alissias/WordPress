@@ -25,6 +25,14 @@
         text-transform: uppercase;
         color: #299cbd;
     }
+    &__learning {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #efefef;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -44,6 +52,9 @@
             font-size: 25px;
         }
         &__optimization {
+            font-size: 25px;
+        }
+        &__learning {
             font-size: 25px;
         }
     }
