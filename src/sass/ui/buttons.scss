@@ -7,6 +7,11 @@
         display: block;
         margin: 72px auto 70px auto;
     }
+    &__present {
+        @include btn;
+        display: block;
+        margin: 51px auto 0 auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -20,7 +25,7 @@
 
 @media screen and (max-width: 576px) {
     .btn {
-        &__promo {
+        &__promo, &__present {
             width: 250px;
             height: 60px;
             font-size: 15px;
