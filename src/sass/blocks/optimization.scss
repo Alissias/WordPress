@@ -1,0 +1,48 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.optimization {
+    padding-top: 150px;
+    &__wrapper {
+        position: relative;
+        padding-left: 390px;
+    }
+    &__img {
+        display: block;
+        position: absolute;
+        top: -77px;
+        left: -200px;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 159%;
+        color: #4a4a4a;
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .optimization {
+        padding-top: 50px;
+        &__img {
+            display: none;
+        }
+        &__wrapper {
+            padding: 30px 0;
+        }
+        &__text {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .optimization {
+        &__wrapper {
+            padding: unset;
+        }
+    }
+}

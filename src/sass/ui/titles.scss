@@ -18,6 +18,21 @@
         text-align: center;
         color: #252525;
     }
+    &__optimization {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #299cbd;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .title {
+        &__optimization {
+            text-align: center;
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -25,5 +40,12 @@
         &__promo {
             font-size: 20px;
         }
+        &__waiting {
+            font-size: 25px;
+        }
+        &__optimization {
+            font-size: 25px;
+        }
     }
 }
+

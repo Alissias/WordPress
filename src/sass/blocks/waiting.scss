@@ -2,7 +2,7 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .waiting {
-    margin: 88px 0 75px 0;
+    margin: 88px 0 0 0;
     .divider {
         @include divider;
         margin: 20px auto;
